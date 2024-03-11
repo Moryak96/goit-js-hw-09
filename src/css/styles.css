@@ -25,9 +25,11 @@ li {
   color: darkgreen;
 
 }
+
 .link{
   padding-right: 22px;
 }
+
 .title{
   font-size: 30px;
   margin-top: 50px;
@@ -50,6 +52,7 @@ li {
   height: 300px;
   background-size: cover;
 }
+
 .feedback-form{
   display: flex;
   flex-direction: column;
