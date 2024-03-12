@@ -11,7 +11,7 @@ function saveFormState() {
   localStorage.setItem(formStateKey, JSON.stringify(formData));
 }
 
-function fillFormFromStorage() {
+function getDataFromStorage() {
   const storedData = localStorage.getItem(formStateKey);
   if (storedData) {
     const formData = JSON.parse(storedData);
@@ -20,11 +20,17 @@ function fillFormFromStorage() {
   }
 }
 
-fillFormFromStorage();
+getDataFromStorage();
 form.addEventListener('input', saveFormState);
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
+  
+  if (emailInput.value.trim() === '' || messageInput.value.trim() === '') {
+    alert('Будь ласка, заповніть всі поля форми');
+    return;
+  }
+
   const formData = {
     email: emailInput.value,
     message: messageInput.value

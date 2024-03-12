@@ -25,11 +25,9 @@ li {
   color: darkgreen;
 
 }
-
 .link{
   padding-right: 22px;
 }
-
 .title{
   font-size: 30px;
   margin-top: 50px;
@@ -52,7 +50,6 @@ li {
   height: 300px;
   background-size: cover;
 }
-
 .feedback-form{
   display: flex;
   flex-direction: column;
@@ -65,7 +62,7 @@ font-size: 20px;
 .button{
   height: 30px;
   font-size: 16px;
-  background-color: lightgreen;
+  background-color: rgb(85, 197, 85);
 }
 
  
